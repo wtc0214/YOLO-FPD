@@ -20,17 +20,17 @@ cuda 11.6
 
 ---
 
-### 1. Create a new conda environment and train
+### Create a new conda environment and train
 
 ```bash
 conda create -n signlang python=3.10
 conda activate signlang
 
-# 2. Install dependencies
+# Install dependencies
 pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 
-# 3. Install Ultralytics
+# Install Ultralytics
 git clone https://github.com/ultralytics/ultralytics
 cd ultralytics
 pip install -e .
