@@ -30,11 +30,6 @@ conda activate signlang
 pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 
-# Install Ultralytics
-git clone https://github.com/ultralytics/ultralytics
-cd ultralytics
-pip install -e .
-
 Train
 python train.py model=name.yaml data=data.yaml epoch=300 batch=8
 
