@@ -1,0 +1,8 @@
+# YOLOv5 segmentation dataset
+train: E:/VOC_YOLO_Segmentation/images/train
+val: E:/VOC_YOLO_Segmentation/images/val
+nc: 20  # 只训练前景类别，类别编号 0～19
+names: ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle',
+        'bus', 'car', 'cat', 'chair', 'cow',
+        'diningtable', 'dog', 'horse', 'motorbike', 'person',
+        'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
