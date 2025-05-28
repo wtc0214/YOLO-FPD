@@ -26,20 +26,6 @@ cuda 11.6
 conda create -n signlang python=3.10
 conda activate signlang
 ---
-## 🔧 Installation
-
-### ✅ Environment
-...
-
-### 1. Create a new conda environment
-...
-
-### 2. Install dependencies
-```bash
-
-...
-
-
 
 
 
