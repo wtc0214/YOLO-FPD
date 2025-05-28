@@ -20,32 +20,28 @@ cuda 11.6
 
 ---
 
-### 1. Create a new conda environment
+### 1. Create a new conda environment and train
 
 ```bash
 conda create -n signlang python=3.10
 conda activate signlang
 
-
-pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
-pip install -r requirements.txt
-
-python train.py model=name.yaml data=data.yaml epoch=300 batch=8
-
-python detect.py mode=predict model=weight_path source=dataset_path
-
-
-
-# 1. Create a new conda environment
-conda create -n dehaze python=3.8
-conda activate dehaze
-
 # 2. Install dependencies
-conda install pytorch=1.10.2 torchvision torchaudio cudatoolkit=11.3
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 pip install -r requirements.txt
 
 # 3. Install Ultralytics
 git clone https://github.com/ultralytics/ultralytics
 cd ultralytics
 pip install -e .
+
+Train
+python train.py model=name.yaml data=data.yaml epoch=300 batch=8
+
+Detect
+python detect.py mode=predict model=weight_path source=dataset_path
+
+
+
+
 
